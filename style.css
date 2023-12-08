@@ -1,0 +1,47 @@
+h1{
+    border: 5px solid;
+    border-radius: 15px;
+
+    background-color: midnightblue;
+    color: gold;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+body{
+    background-image: url("Assets/BG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    margin: 30px;
+}
+button{
+    border: 5px solid;
+    border-radius: 15px;
+
+    background-color: midnightblue;
+    color: gold;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+hr{
+    border: 10px solid darkred;
+    border-radius: 10px;
+}
+
+/*Footer*/
+footer{
+    position: fixed;
+    bottom: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Disclaimer{
+    color: black;
+}
