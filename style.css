@@ -39,7 +39,7 @@ header .navbar ul li a {
 }
 
 header .navbar ul li ul {
-  width: 150px;
+  width: 200px;
   background: #2e38be;
   position: absolute;
   display: none;
@@ -77,6 +77,15 @@ body{
     background-attachment: fixed;
 
     margin: 30px;
+}
+
+.modules{
+  margin-top: 100px;
+  background: #2d3b8a;
+
+  color: white;
+  font-size: 20px;
+  padding: 20px 20px;
 }
 
 button{
