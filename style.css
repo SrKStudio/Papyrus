@@ -1,20 +1,72 @@
-/*Header*/
-h1{
-    border: 5px solid;
-    border-radius: 15px;
+@import url('https://fonts.googleapis.com/css?family=Protest Strike');
 
-    background-color: midnightblue;
-    color: gold;
-
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-
-    padding: 10px;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Protest Strike', monospace;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
-hr{
-    border: 10px solid darkred;
-    border-radius: 10px;
+/*Navigation bar*/
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: #2e38be;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .navbar ul{
+  list-style: none;
+}
+
+header .navbar ul li {
+  display: inline-block;
+  position: relative;
+}
+
+header .navbar ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+header .navbar ul li ul {
+  width: 150px;
+  background: #2e38be;
+  position: absolute;
+  display: none;
+}
+
+header .navbar ul li ul li{
+  width: 100%;
+}
+
+header .navbar ul li a:hover {
+  background: #f8fa81;
+  color: black;
+}
+
+header .navbar ul li:hover ul {
+  display: block;
+}
+
+header .navbar .active{
+  background: rgb(141, 37, 37);
+}
+
+#searchbar {
+  width: 200px;
+  font-size: 20px;
+  background: #f8fa81;
+  color: black;
 }
 
 /*Body*/
@@ -34,7 +86,6 @@ button{
     background-color: midnightblue;
     color: gold;
 
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     text-align: center;
 
@@ -45,10 +96,9 @@ button{
 /*Footer*/
 footer{
     position: fixed;
-    bottom: 0px;
-    margin: 0px;
+    bottom: 0;
+    margin: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .Disclaimer{
