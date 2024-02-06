@@ -22,6 +22,8 @@
                         <li><a href="#research">Research</a><li>
                         <li><a href="#entrep">Entrepreneurship</a><li>
                         <li><a href="#immersion">Work Immersion</a><li>
+                        <li><a href="#mil">MIL</a><li>
+                        <li><a href="#arts">Arts</a><li>
                     </ul>
                 </li>
                 <li><a href="https://github.com/SrKStudio/WITI-Module">Source Code</a></li>
@@ -34,6 +36,7 @@
  
     <main>
         <div class="modules">
+            <!-- ICT -->
             <details>
                 <summary id="ict">
                     ICT
@@ -51,9 +54,14 @@
                         <summary>
                             Quarter 2
                         </summary>
-                        <a href="array.docx">
+                        <a href="Modules\ICT-G12-Q2-1.pdf">
                             <button>
                                 Array
+                            </button>
+                        </a>
+                        <a href="Modules\ICT-G12-Q2-2.pdf">
+                            <button>
+                                Date and Time
                             </button>
                         </a>
                     </details>
@@ -70,6 +78,7 @@
                 </details>
             </details>
 
+            <!-- PE -->
             <details>
                 <summary id="pe">
                     PE
@@ -87,6 +96,111 @@
                         <summary>
                             Quarter 2
                         </summary>
+                        <ul id="fileList"></ul>
+
+                        <script>
+                            // Fetch the file list
+                            fetchFileList();
+
+                            function fetchFileList() {
+                                // Replace 'your-folder' with the actual folder name
+                                const folderPath = 'Modules';
+
+                                fetch(`modules.php?folder=${folderPath}`)
+                                    .then(response => response.json())
+                                    .then(files => displayFileList(files))
+                                    .catch(error => console.error('Error fetching file list:', error));
+                            }
+
+                            function displayFileList(files) {
+                                const fileListElement = document.getElementById('fileList');
+
+                                files.forEach(file => {
+                                    const listItem = document.createElement('li');
+                                    listItem.textContent = file;
+                                    fileListElement.appendChild(listItem);
+                                });
+                            }
+                        </script>
+                    </details>
+                    <details>
+                        <summary>
+                            Quarter 3
+                        </summary>
+                    </details>
+                    <details>
+                        <summary>
+                            Quarter 4
+                        </summary>
+                    </details>
+                </details>
+            </details>
+
+            <!-- MIL -->
+            <details>
+                <summary id="mil">
+                    MIL
+                </summary>
+                <details>
+                    <summary>
+                        Grade 12
+                    </summary>
+                    <details>
+                        <summary>
+                            Quarter 1
+                        </summary>
+                    </details>
+                    <details>
+                        <summary>
+                            Quarter 2
+                        </summary>
+                        <a href="Modules\MIL-G12-Q2-1.pdf">
+                            <button>
+                                MEDIA AND INFORMATION LANGUAGES
+                            </button>
+                        </a>
+                        <a href="Modules\MIL-G12-Q2-2.pdf">
+                            <button>
+                                MEDIA AND INFORMATION SOURCES
+                            </button>
+                        </a>
+                    </details>
+                    <details>
+                        <summary>
+                            Quarter 3
+                        </summary>
+                    </details>
+                    <details>
+                        <summary>
+                            Quarter 4
+                        </summary>
+                    </details>
+                </details>
+            </details>
+
+            <!-- Arts -->
+            <details>
+                <summary id="art">
+                    ART
+                </summary>
+                <details>
+                    <summary>
+                        Grade 12
+                    </summary>
+                    <details>
+                        <summary>
+                            Quarter 1
+                        </summary>
+                    </details>
+                    <details>
+                        <summary>
+                            Quarter 2
+                        </summary>
+                        <a href="Modules\Arts-G12-Q2-1.pdf">
+                            <button>
+                                Concept in Intergration Arts Production
+                            </button>
+                        </a>
                     </details>
                     <details>
                         <summary>
