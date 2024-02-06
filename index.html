@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Papyrus </title>
-    <link rel="stylesheet" href="/../style.css">
+    <link rel="stylesheet" href="/Papyrus/style.css">
     <link rel="stylesheet" href="https://fonts.google.com">
     <link rel="icon" href="Assets/WITI.ico?">
 </head>
@@ -96,32 +96,6 @@
                         <summary>
                             Quarter 2
                         </summary>
-                        <ul id="fileList"></ul>
-
-                        <script>
-                            // Fetch the file list
-                            fetchFileList();
-
-                            function fetchFileList() {
-                                // Replace 'your-folder' with the actual folder name
-                                const folderPath = 'Modules';
-
-                                fetch(`modules.php?folder=${folderPath}`)
-                                    .then(response => response.json())
-                                    .then(files => displayFileList(files))
-                                    .catch(error => console.error('Error fetching file list:', error));
-                            }
-
-                            function displayFileList(files) {
-                                const fileListElement = document.getElementById('fileList');
-
-                                files.forEach(file => {
-                                    const listItem = document.createElement('li');
-                                    listItem.textContent = file;
-                                    fileListElement.appendChild(listItem);
-                                });
-                            }
-                        </script>
                     </details>
                     <details>
                         <summary>
