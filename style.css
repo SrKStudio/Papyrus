@@ -63,10 +63,10 @@ header .navbar .active{
 }
 
 #searchbar {
-  width: 200px;
+  width: 500px;
   font-size: 20px;
-  background: #f8fa81;
-  color: black;
+  background:#a8b5ff;
+  color: rgb(0, 0, 0);
 }
 
 /*Body*/
@@ -99,7 +99,54 @@ button{
     text-align: center;
 
     width: 200px;
+    height: 200px;
     padding: 5px;
+}
+
+#main-body {
+  position: fixed;
+  padding: 100px;
+  /* background-color: #2d3b8a; */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px 20px;
+  justify-content: flex-start;
+
+  z-index: -1;
+  left: 250px; right: 0px; bottom: 20px; top: 60px;
+}
+
+/* SIDE BAR */
+
+#lblfilter {
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+}
+
+#sidebar {
+  width: 200px;
+  background-color: #4750ce;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 60px;
+  bottom: 0px;
+  left: 0px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.filter {
+  background:#a8b5ff;
 }
 
 /*Footer*/

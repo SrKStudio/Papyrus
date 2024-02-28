@@ -35,160 +35,40 @@
     </header>
  
     <main>
-        <div class="modules">
-            <!-- ICT -->
-            <details>
-                <summary id="ict">
-                    ICT
-                </summary>
-                <details>
-                    <summary>
-                        Grade 12
-                    </summary>
-                    <details>
-                        <summary>
-                            Quarter 1
-                        </summary>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 2
-                        </summary>
-                        <a href="Modules\ICT-G12-Q2-1.pdf">
-                            <button>
-                                Array
-                            </button>
-                        </a>
-                        <a href="Modules\ICT-G12-Q2-2.pdf">
-                            <button>
-                                Date and Time
-                            </button>
-                        </a>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 3
-                        </summary>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 4
-                        </summary>
-                    </details>
-                </details>
-            </details>
 
-            <!-- PE -->
-            <details>
-                <summary id="pe">
-                    PE
-                </summary>
-                <details>
-                    <summary>
-                        Grade 12
-                    </summary>
-                    <details>
-                        <summary>
-                            Quarter 1
-                        </summary>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 2
-                        </summary>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 3
-                        </summary>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 4
-                        </summary>
-                    </details>
-                </details>
-            </details>
+        <div id="sidebar">
+            <div><label id="lblfilter">Filters</label></div>
+            
+            <label for="subject">Subject:</label>
+            <select class=filter id="subject" onchange="filterModules()">
+                <option value="ict">ICT</option>
+                <option value="arts">Arts</option>
+                <option value="mil">MIL</option>
+                <option value="entrep">Entrepreneurship</option>
+    
+            </select>
+    
+            <label for="grade">Grade:</label>
+            <select class=filter id="grade" onchange="filterModules()">
+                <option value="g11">Grade 11</option>
+                <option value="g12">Grade 12</option>
+                <option value="college">College</option>
 
-            <!-- MIL -->
-            <details>
-                <summary id="mil">
-                    MIL
-                </summary>
-                <details>
-                    <summary>
-                        Grade 12
-                    </summary>
-                    <details>
-                        <summary>
-                            Quarter 1
-                        </summary>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 2
-                        </summary>
-                        <a href="Modules\MIL-G12-Q2-1.pdf">
-                            <button>
-                                MEDIA AND INFORMATION LANGUAGES
-                            </button>
-                        </a>
-                        <a href="Modules\MIL-G12-Q2-2.pdf">
-                            <button>
-                                MEDIA AND INFORMATION SOURCES
-                            </button>
-                        </a>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 3
-                        </summary>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 4
-                        </summary>
-                    </details>
-                </details>
-            </details>
-
-            <!-- Arts -->
-            <details>
-                <summary id="art">
-                    ART
-                </summary>
-                <details>
-                    <summary>
-                        Grade 12
-                    </summary>
-                    <details>
-                        <summary>
-                            Quarter 1
-                        </summary>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 2
-                        </summary>
-                        <a href="Modules\Arts-G12-Q2-1.pdf">
-                            <button>
-                                Concept in Intergration Arts Production
-                            </button>
-                        </a>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 3
-                        </summary>
-                    </details>
-                    <details>
-                        <summary>
-                            Quarter 4
-                        </summary>
-                    </details>
-                </details>
-            </details>
+            </select>
+    
+            <label for="quarter">Quarter:</label>
+            <select class=filter id="quarter" onchange="filterModules()">
+                <option value="q1">Quarter 1</option>
+                <option value="q2">Quarter 2</option>
+                <option value="q3">Quarter 3</option>
+                <option value="q4">Quarter 4</option>
+            </select>
         </div>
+
+        <div id="main-body">
+
+        </div>
+
 
     </main>
 
@@ -201,5 +81,9 @@
             </a>
         </div>
     </footer>
+
+    <script src="DbModules.js"></script>
+    <script src="FilterModules.js"></script>
+
 </body>
 </html>
