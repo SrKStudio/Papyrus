@@ -13,7 +13,7 @@
         <nav class="navbar">
             <ul>
                 <li><a class="active" href="#home">Home</a></li>
-                <li>
+                <!-- <li>
                     <a href="#modules">Modules</a>
                     <ul>
                         <li><a href="#ict">ICT</a><li>
@@ -25,10 +25,10 @@
                         <li><a href="#mil">MIL</a><li>
                         <li><a href="#arts">Arts</a><li>
                     </ul>
-                </li>
+                </li> -->
                 <li><a href="https://github.com/SrKStudio/WITI-Module">Source Code</a></li>
                 <li><a href="#about">About</a></li>
-                <li><input type="text" id="searchbar" placeholder="Search"></li>
+                <!-- <li><input type="text" id="searchbar" placeholder="Search"></li> -->
             </ul>
     
         </nav>
@@ -41,7 +41,7 @@
             
             <label for="subject">Subject:</label>
             <select class=filter id="subject" onchange="filterModules()">
-                <option value="ict">ICT</option>
+                <option value="ict" selected="selected">ICT</option>
                 <option value="arts">Arts</option>
                 <option value="mil">MIL</option>
                 <option value="entrep">Entrepreneurship</option>
@@ -51,7 +51,7 @@
             <label for="grade">Grade:</label>
             <select class=filter id="grade" onchange="filterModules()">
                 <option value="g11">Grade 11</option>
-                <option value="g12">Grade 12</option>
+                <option value="g12" selected="selected">Grade 12</option>
                 <option value="college">College</option>
 
             </select>
@@ -59,7 +59,7 @@
             <label for="quarter">Quarter:</label>
             <select class=filter id="quarter" onchange="filterModules()">
                 <option value="q1">Quarter 1</option>
-                <option value="q2">Quarter 2</option>
+                <option value="q2" selected="selected">Quarter 2</option>
                 <option value="q3">Quarter 3</option>
                 <option value="q4">Quarter 4</option>
             </select>
@@ -82,8 +82,8 @@
         </div>
     </footer>
 
-    <script src="DbModules.js"></script>
-    <script src="FilterModules.js"></script>
+    <script src="Scripts/DbModules.js"></script>
+    <script src="Scripts/FilterModules.js"></script>
 
 </body>
 </html>

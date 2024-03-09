@@ -3,8 +3,6 @@ function filterModules() {
     const selectedGrade = document.getElementById('grade').value;
     const selectedQuarter = document.getElementById('quarter').value;
 
-    
-
     const filteredModules = moduleData.filter(module => {
         return module.subject === selectedSubject &&
                module.grade === selectedGrade &&
@@ -20,14 +18,12 @@ function displayModules(modules) {
 
     modules.forEach(module => {
 
-        // Create HTML elements to display each module
         const downloadButton = document.createElement('a');
-        downloadButton.href = `${module.path}`; // Adjust the file path based on your structure
+        downloadButton.href = `${module.path}`;
         const buttonElement = document.createElement('button');
-        buttonElement.textContent = module.name; // Adjust as per your module data structure
+        buttonElement.textContent = module.name;
         downloadButton.appendChild(buttonElement);
 
-        // Append the button to the main content
         mainContent.appendChild(downloadButton);
     });
 }
